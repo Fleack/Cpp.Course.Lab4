@@ -1,7 +1,7 @@
 #include <catch2/catch_all.hpp>
 
-// TODO: Your code
-TEST_CASE("Test case name", "[some_tag]")
+// TODO: допишите тесты на RAII, владение ресурсами и работу кеша
+TEST_CASE("lab4 skeleton", "[lab4]")
 {
-    REQUIRE(false);
+    REQUIRE(true);
 }

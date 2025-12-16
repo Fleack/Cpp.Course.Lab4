@@ -7,13 +7,13 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(catch2)
 
-add_executable(body_tests
+add_executable(resource_tests
         tests.cpp
 )
 
-target_link_libraries(body_tests PRIVATE body_core project_warnings Catch2::Catch2WithMain)
+target_link_libraries(resource_tests PRIVATE resource_core project_warnings Catch2::Catch2WithMain)
 if (TARGET project_sanitizers)
-        target_link_libraries(body_tests PRIVATE project_sanitizers)
+        target_link_libraries(resource_tests PRIVATE project_sanitizers)
 endif ()
 
-add_test(NAME body_tests COMMAND body_tests)
+add_test(NAME resource_tests COMMAND resource_tests)
